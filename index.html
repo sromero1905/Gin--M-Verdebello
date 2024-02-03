@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<!--=============== CSS ===============-->
+<link rel="stylesheet" href="assets/css/style.css">
+
+<title>Gin Verdebello</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#specs" class="nav__link">Gin</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#cocktail" class="nav__link">Tragos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Comprar</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#accesories" class="nav__link">Accesorios</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div>
+                    <img src="assets/img/home.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__data">
+                    <div class="home__header">
+                        <h1 class="home__title">Gin </h1>
+                        <h2 class="home__subtitle">Verdebello</h2>
+                    </div>
+
+                    <div class="home__footer">
+                        <h3 class="home__title-description">Autenticidad mediterránea.</h3>
+                        <p class="home__description">Explora la fusión fresca y auténtica de ingredientes mediterráneos
+                            y cítricos, que dan vida a un perfil de sabor único y refrescante. Una experiencia que evoca
+                            la esencia de lo exquisito y lo fresco en cada sorbo.
+                        </p>
+                        <a href="#specs" class="button__home__call">
+                            <span class="button--flex">
+                                <i class="ri-arrow-down-line button__icon"></i> Descubrir
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--=============== SPECS ===============-->
+        <section class="specs section grid" id="specs">
+            <h2 class="section__title section__title-gradient">Gin Verdebello</h2>
+
+            <div class="specs__container container grid">
+                <div class="specs__content grid">
+                    <div class="specs__data">
+                        <i class="seed-icon specs__icon"></i>
+                        <h3 class="specs__title">Menta</h3>
+                        <span class="specs__subtitle">Refrescante toque herbal.</span>
+                    </div>
+
+                    <div class="specs__data">
+                        <i class="lemon-icon specs__icon"></i>
+                        <h3 class="specs__title">Limón</h3>
+                        <span class="specs__subtitle">Vibración cítrica viva.</span>
+                    </div>
+
+                    <div class="specs__data">
+                        <i class="orange-icon specs__icon"></i>
+                        <h3 class="specs__title">Naranja</h3>
+                        <span class="specs__subtitle">Dulzor cítrico sutil.</span>
+                    </div>
+
+                    <div class="specs__data">
+                        <i class="grape-icon specs__icon"></i>
+                        <h3 class="specs__title">Uvas</h3>
+                        <span class="specs__subtitle">Suavidad frutal<br> sutilmente refinada.</span>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/specs.png" alt="" class="specs__img ">
+                </div>
+
+            </div>
+        </section>
+
+        <!--=============== Cocktail ===============-->
+        <section class="case section grid" id="cocktail">
+            <h2 class="section__title section__title-gradient">Tragos</h2>
+
+            <div class="case__container container grid">
+                <div>
+                    <img src="assets/img/case.png" alt="" class="case__img">
+                </div>
+
+                <div class="case__data">
+                    <p class="case__description">Explora cócteles frescos y sofisticados que realzan la frescura cítrica
+                        y la complejidad herbal de Gin Verdebello. Cada trago es una experiencia única y armoniosa.
+                    </p>
+                    <a href="#" class="button button--flex">
+                        <i class="ri-information-line button__icon"></i> Mas info
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="cocktail section grid">
+            <div class="cocktail__container">
+                <h2 class="section__title section__title-gradient">Descubre nuevas recetas</h2>
+                <p class="cocktail__description">Ingresa tus ingredientes y encuentra deliciosos tragos.</p>
+                <textarea class="cocktail__textarea" placeholder="Ingresa tus ingredientes aquí"></textarea>
+                <button class="cocktail__button button__home__call">Descubrir</button>
+                <div class="cocktail__results" id="results"></div>
+                <div class="notification" id="notification"></div>
+            </div>
+        </section>
+
+        </section>
+
+        <!--=============== DISCOUNT ===============-->
+        <section class="discount section products" id="products">
+            <div class="discount__container container grid">
+                <div class="discount__animate">
+                    <h2 class="discount__title">Sumérgete en la <br> experiencia pura</h2>
+                    <p class="discount__description">Ordénalo ahora y disfruta de hasta un 50% de descuento.</p>
+                    <div class="discount__prices">
+                        <p class="discount__old-price">Original Price: <del>$170.000</del></p>
+                        <p class="discount__new-price">Now: $85.000</p>
+                    </div>
+                    <a href="#" class="button button--flex shop_button">
+                        <i class="ri-shopping-bag-line button__icon"></i> Sold Out
+                    </a>
+                </div>
+
+
+                <img src="assets/img/discount.png" alt="" class="discount__img">
+            </div>
+        </section>
+
+        <!--=============== PRODUCTS ===============-->
+        
+        <section id="accesories">
+            <h2 class="section__title section__title-gradient products__line">
+                Elegí <br> Tus Accesorios
+            </h2>
+            <div id="cart-wrap">
+
+                <div id="cart-products"></div>
+
+
+                <div id="cart-items"></div>
+            </div>
+
+        </section>
+
+
+    </main>
+    <h2 class="section__title section__title-gradient products__line">
+        Te Recomendamos <br>Los Mejores Tragos
+    </h2>
+    <section class="weather-content">
+        
+        <div class="result">
+            <p>Agrege cuidad y pais</p>
+            <!-- <h5>Clima en Bogota</h5>
+            <img src="" alt="">
+            <h2>28°C</h2>
+            <p>Max: 29°C</p>
+            <p>Min: 27°C</p> -->
+        </div>
+        <form action="" method="POST" class="get-weather">
+            <input type="text" name="city" id="city" placeholder="Write your city...">
+            <select name="" id="country">
+                <option disabled selected value="">Select the country</option>
+                <option value="AR">Argentina</option>
+                <option value="CO">Colombia</option>
+                <option value="CR">Costa Rica</option>
+                <option value="ES">España</option>
+                <option value="US">Estados Unidos</option>
+                <option value="MX">México</option>
+                <option value="PE">Perú</option>
+            </select>
+            <input type="submit" name="" id="" value="Get Weather">
+        </form>
+    </section>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <a href="#" class="footer__logo">
+                <img src="assets/img/logo.png" alt="">
+            </a>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Links</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#specs" class="footer__link">Especificaciones</a>
+                    </li>
+                    <li>
+                        <a href="#cocktail" class="footer__link">Tragos</a>
+                    </li>
+                    <li>
+                        <a href="#products" class="footer__link">Comprar</a>
+                    </li>
+                    <li>
+                        <a href="#accesories" class="footer__link">Accesorios</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Ayuda</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Product help</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Register</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Updates</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Provides</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                
+
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__copy">
+            <a href="/index.html" target="_blank" class="footer__copy-link">&#169; Gin Verdebello. All right reserved
+                <span><img src="./assets/img/ice_01.svg" alt="" class="footer__copy-img"></span></a>
+
+        </p>
+        <br>
+    </footer>
+
+    
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=============== MAIN JS ===============-->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
