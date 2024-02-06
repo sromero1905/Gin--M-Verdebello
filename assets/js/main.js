@@ -488,7 +488,7 @@ CART
 
 */
 
-var cart = {
+const cart = {
   hPdt: null,
   hItems: null,
   items: {},
